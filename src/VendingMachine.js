@@ -26,8 +26,6 @@ function VendingMachine({ snacks }) {
                 ))}
             </ul>
 
-
-
             {/* <Link to="/snack/chips" >
                 Chips
             </Link>
