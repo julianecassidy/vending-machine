@@ -1,5 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 
+// TODO: include useParams in doc string
+
 /** Component for individual snacks
  *
  * Props:

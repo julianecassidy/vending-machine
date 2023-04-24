@@ -4,6 +4,8 @@ import VendingMachine from './VendingMachine';
 import Snack from './Snack';
 import NavBar from "./NavBar";
 
+// TODO: doc string
+
 function App() {
 
   const snacks = ["chips", "cookies", "doughnuts"];

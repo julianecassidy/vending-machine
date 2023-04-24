@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
  * Component for VendingMachine
  *
  * Props:
- * - none
+ * - snacks
  *
  * State:
  * - none

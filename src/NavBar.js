@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
  * Navbar for VendingMachine
  *
  * Props:
- * - none
+ * - snacks
  *
  * State:
  * - none
@@ -20,6 +20,9 @@ function NavBar({ snacks }) {
     <ul>
       {snacks.map(snack => (
         <li key={snack}>
+
+          {/* TODO: can use the NavLink component - adds built in functionality */}
+
           <Link to={`/snack/${snack}`}>{snack}</Link>
         </li>
       ))}
