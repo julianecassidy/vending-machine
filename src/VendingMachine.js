@@ -1,23 +1,34 @@
 import { Link } from "react-router-dom";
 
-/** 
+/**
  * Component for VendingMachine
- * 
+ *
  * Props:
  * - none
- * 
+ *
  * State:
  * - none
- * 
+ *
  * App -> VendingMachine -> Snack
  */
 
-function VendingMachine() {
+function VendingMachine({ snacks }) {
 
     return (
         <div className="VendingMachine">
             <h2>Choose a Snack</h2>
-            <Link to="/snack/chips" >
+
+            <ul>
+                {snacks.map(snack => (
+                    <li key={snack}>
+                        <Link to={`/snack/${snack}`}>{snack}</Link>
+                    </li>
+                ))}
+            </ul>
+
+
+
+            {/* <Link to="/snack/chips" >
                 Chips
             </Link>
             <br></br>
@@ -27,9 +38,10 @@ function VendingMachine() {
             <br></br>
             <Link to="/snack/doughnuts" >
                 Doughnuts
-            </Link>
+            </Link> */}
+
         </div>
-    )
+    );
 }
 
 export default VendingMachine;

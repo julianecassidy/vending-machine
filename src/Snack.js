@@ -1,16 +1,25 @@
-/** AppComponent for summary
- * 
+import { useParams, Link } from "react-router-dom";
+
+/** Component for individual snacks
+ *
  * Props:
- * - 
- * 
+ * -
+ *
  * State:
- * - 
- * 
- * call list
+ * -
+ *
+ * VendingMachine ->
  */
 
-function Snack () {
+function Snack() {
+  const {name} = useParams();
 
+  return (
+    <div className="Snack">
+      <p>Delicious {name}.</p>
+      <button><Link to={"/"}>Return</Link></button>
+    </div>
+  )
 }
 
 export default Snack;
